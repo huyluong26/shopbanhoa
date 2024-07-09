@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoa đep</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu-phim">
+        <div id="logo"><img src="./logoshop1.png" widht="50px" height="50px"></div>
+        <ul>
+          <li><a href="./home.html">Trang chủ</a></li>
+          <li class="dropdown">
+            <a href="" class="dropbtn">Hoa đẹp</a>
+            <div class="dropdown-content">
+                <a href="">Hoa sinh nhật</a>
+                <a href="">Hoa tặng người yêu</a>
+                <a href="">Hoa khai trương</a>
+                <a href="">Hoa tặng mẹ </a>
+                <a href="">Hoa trang trí</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="" class="dropbtn">Socola & Kẹo mút</a>
+            <div class="dropdown-content">
+                <a href="">Socola Vanlentine</a>
+                <a href="">Hoa kẹo mút</a>
+                <a href="">Socola đen</a>
+                <a href="">Socola trắng </a>
+                <a href="">Kẹo mút khổng lồ</a>
+            </div>
+        </li>
+          <li><a href="#">Gấu bông</a></li>
+          <li><a href="#">Bóng bay</a></li>
+        </ul>
+        <div class="tim-kiem">
+          <input type="text" placeholder="Nhập tên hoa, socola, gấu bông hoặc từ khóa...">
+          <button type="submit"><i class='bx bx-search'></i></button>
+        </div>
+        <div class="login">
+            <a href="./index.html">
+                <i class='bx bx-user' ></i>
+            </a>
+        </div>
+        <div class="shop"><a href=""><i class='bx bxs-shopping-bag'></i></box-icon></a></div>
+    </div>
+
+
+    <div class="khung-chua">
+        <div class="hinh-san-pham">
+            <img id="hinhLon" src="https://bizweb.dktcdn.net/100/333/744/files/hop-socola-valentine-c7fd89a4-0808-4235-959f-731539600701.png?v=1673333219927" alt="😀">
+            <div class="hinh-nho">
+                <img src="https://hoachitin.com/Valentine/socola-valentine-chocolate-truffle-socola-trai-tim-01.jpg" alt="Hình nhỏ 1" onclick="thayDoiHinh('https://hoachitin.com/Valentine/socola-valentine-chocolate-truffle-socola-trai-tim-01.jpg')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiNKb_d4ecVSbc3ex7fhiLg28qI2lYQZ9N_h25diZSiByCOskv" alt="Hình nhỏ 2" onclick="thayDoiHinh('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiNKb_d4ecVSbc3ex7fhiLg28qI2lYQZ9N_h25diZSiByCOskv')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl-PyNJE4b8oBdc3GikimlPgg5PP5u4HxiijeE1dJdOVoAddNT" alt="Hình nhỏ 3" onclick="thayDoiHinh('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl-PyNJE4b8oBdc3GikimlPgg5PP5u4HxiijeE1dJdOVoAddNT')">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcEfAlYyo_GVCo2nYkMk2tpweMrINTmwOm-BBpUnjIC5BDCvi0" alt="Hình nhỏ 4" onclick="thayDoiHinh('https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcEfAlYyo_GVCo2nYkMk2tpweMrINTmwOm-BBpUnjIC5BDCvi0')">
+            </div>
+        </div>
+        <div class="chi-tiet-san-pham">
+            <h1>Socola trái tim </h1>
+            <div class="gia">
+                <span class="gia-moi">560,000đ</span>
+                <span class="gia-cu">590,000đ</span>
+            </div>
+            <div class="lua-chon-size">
+                <label for="kichThuoc">Kích thước:</label>
+                <select id="kichThuoc">
+                    <option value="L">L</option>
+                    <option value="M">M</option>
+                    <option value="S">S</option>
+                </select>
+            </div>
+            <div class="lua-chon-so-luong">
+                <label>Số lượng: </label>
+                <button onclick="thayDoiSoLuong(-1)">-</button>
+                <input type="text" id="soLuong" value="1">
+                <button onclick="thayDoiSoLuong(1)">+</button>
+            </div>
+            <buton  class="dat-hang">Đặt hàng </buton>
+            <button class="them-vao-gio-hang">Thêm vào giỏ hàng </button>
+            <div class="khuyen-mai">
+                <h3>TỪ 05 - 07/06</h3>
+                <ul>
+                    <li>🌹 Tặng bạn voucher 66K cho đơn hàng từ 666K - Nhập mã 'SS66'</li>
+                    <li>🌹 Tặng bạn voucher 166K cho đơn hàng từ 1666K - Nhập mã 'SS166'</li>
+                    <li>🌹 Tặng bạn voucher 266K cho đơn hàng từ 2666K</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="./index.js"></script>
+</body>
+</html>

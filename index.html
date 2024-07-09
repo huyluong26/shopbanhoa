@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Đăng Nhập</title>
+
+    <style>
+        body {
+            background: url(./hinh-nen-hoa-tulip-1.webp) no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ccc; /* Màu chữ chung cho body */
+        }
+        
+        .wrapper {
+            width: 350px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid rgb(241, 241, 241);
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(6px);
+            box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+            color: #333; /* Màu chữ cho các phần tử trong wrapper */
+        }
+        
+        .wrapper h2 {
+            font-size: 30px;
+            color: #ffffff; /* Màu chữ cho tiêu đề */
+        }
+        
+        .input-field {
+            position: relative;
+            margin-bottom: 15px;
+        }
+        
+        .input-field input[type="text"],
+        .input-field input[type="password"],
+        .input-field input[type="email"] {
+            border-radius: 10px;
+            background: transparent;
+            border: 2px solid rgb(255, 255, 255);
+            width: calc(100% - 40px); /* Điều chỉnh kích thước */
+            padding: 12px;
+            backdrop-filter: blur(15px);
+            color: #333;
+            outline: none;
+            margin: 8px; /* Khoảng cách giữa các ô input */
+        }
+        
+        .input-field input::placeholder {
+            color: rgb(252, 252, 255);
+        }
+        
+        .input-field input:focus::placeholder {
+            transform: translateY(-100%);
+            transition: transform 0.2s ease-in-out;
+            font-size: 14px;
+        }
+        
+        .input-field input:not(:focus)::placeholder {
+            transform: translateY(0%);
+            transition: transform 0.2s ease-in-out;
+            font-size: 16px;
+        }
+        
+        .wrapper button {
+            background: #fff;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            font-weight: 600;
+            border-radius: 45px;
+            padding: 10px 20px;
+            margin: 5px;
+        }
+        
+        .error-message {
+            color: red;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper" id="login-form">
+        <h2>Đăng Nhập</h2>
+        <form onsubmit="return validateLogin()">
+            <div class="input-field">
+                <input type="text" id="username" name="username" placeholder="Tên đăng nhập">
+            </div>
+            <div class="input-field">
+                <input type="password" id="password" name="password" placeholder="Mật khẩu">
+            </div>
+            <button type="submit">Đăng nhập</button>
+            <button type="button" onclick="forgotPassword()">Quên mật khẩu</button>
+            <button type="button" onclick="showRegisterForm()">Đăng ký</button>
+            <div id="login-error" class="error-message"></div>
+        </form>
+    </div>
+
+    <div class="wrapper" id="register-form" style="display:none;">
+        <h2>Đăng Ký</h2>
+        <form onsubmit="return validateRegister()">
+            <div class="input-field">
+                <input type="text" id="reg-username" name="reg-username" placeholder="Tên đăng nhập">
+            </div>
+            <div class="input-field">
+                <input type="password" id="reg-password" name="reg-password" placeholder="Mật khẩu">
+            </div>
+            <div class="input-field">
+                <input type="password" id="reg-repassword" name="reg-repassword" placeholder="Nhập lại mật khẩu">
+            </div>
+            <div class="input-field">
+                <input type="email" id="reg-email" name="reg-email" placeholder="Email">
+            </div>
+            <button type="submit">Đăng ký</button>
+            <button type="button" onclick="resetRegisterForm()">Hủy</button>
+            <div id="register-error" class="error-message"></div>
+        </form>
+    </div>
+
+    <script src="./index.js"></script> 
+</body>
+</html>

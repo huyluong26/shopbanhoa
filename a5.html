@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoa đep</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu-phim">
+        <div id="logo"><img src="./logoshop1.png" widht="50px" height="50px"></div>
+        <ul>
+          <li><a href="./home.html">Trang chủ</a></li>
+          <li class="dropdown">
+            <a href="" class="dropbtn">Hoa đẹp</a>
+            <div class="dropdown-content">
+                <a href="">Hoa sinh nhật</a>
+                <a href="">Hoa tặng người yêu</a>
+                <a href="">Hoa khai trương</a>
+                <a href="">Hoa tặng mẹ </a>
+                <a href="">Hoa trang trí</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="" class="dropbtn">Socola & Kẹo mút</a>
+            <div class="dropdown-content">
+                <a href="">Socola Vanlentine</a>
+                <a href="">Hoa kẹo mút</a>
+                <a href="">Socola đen</a>
+                <a href="">Socola trắng </a>
+                <a href="">Kẹo mút khổng lồ</a>
+            </div>
+        </li>
+          <li><a href="#">Gấu bông</a></li>
+          <li><a href="#">Bóng bay</a></li>
+        </ul>
+        <div class="tim-kiem">
+          <input type="text" placeholder="Nhập tên hoa, socola, gấu bông hoặc từ khóa...">
+          <button type="submit"><i class='bx bx-search'></i></button>
+        </div>
+        <div class="login">
+            <a href="./index.html">
+                <i class='bx bx-user' ></i>
+            </a>
+        </div>
+        <div class="shop"><a href=""><i class='bx bxs-shopping-bag'></i></box-icon></a></div>
+    </div>
+
+
+    <div class="khung-chua">
+        <div class="hinh-san-pham">
+            <img id="hinhLon" src="https://huongvietmart.vn/wp-content/uploads/2022/11/cach-lam-bo-hoa-banh-keo-1.jpg" alt="😀">
+            <div class="hinh-nho">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQdNZkyaFldrvrblGO7L1cs5W58lheFLqWE3rcr0SAnDdCkWkA0of5Bo-4hqDnM6GIvCg&usqp=CAU" alt="Hình nhỏ 1" onclick="thayDoiHinh('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQdNZkyaFldrvrblGO7L1cs5W58lheFLqWE3rcr0SAnDdCkWkA0of5Bo-4hqDnM6GIvCg&usqp=CAU')">
+                <img src="https://happygiftshop.vn/wp-content/uploads/2022/11/z4141762296681_b7480ec11e18345a8b8e43401121a74d-749x800.jpg" alt="Hình nhỏ 2" onclick="thayDoiHinh('https://happygiftshop.vn/wp-content/uploads/2022/11/z4141762296681_b7480ec11e18345a8b8e43401121a74d-749x800.jpg')">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbri6ljlbTJ7BM-kLol6FeTmuqFmRP9N_jKsFgipKTKm4Bm0i_" alt="Hình nhỏ 3" onclick="thayDoiHinh('https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbri6ljlbTJ7BM-kLol6FeTmuqFmRP9N_jKsFgipKTKm4Bm0i_')">
+                <img src="https://scontent.fhan20-1.fna.fbcdn.net/v/t39.30808-6/405038049_694104412696927_2305633637425281393_n.jpg?stp=dst-jpg_s600x600&_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=lhJB4rYHg9gQ7kNvgHSHhgQ&_nc_ht=scontent.fhan20-1.fna&cb_e2o_trans=q&oh=00_AYCEGeOz0ZkG8_Mdp9u0OSW7Xr7fuF04zR1fKFJdPakG4Q&oe=666CDDDB" alt="Hình nhỏ 4" onclick="thayDoiHinh('https://scontent.fhan20-1.fna.fbcdn.net/v/t39.30808-6/405038049_694104412696927_2305633637425281393_n.jpg?stp=dst-jpg_s600x600&_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=lhJB4rYHg9gQ7kNvgHSHhgQ&_nc_ht=scontent.fhan20-1.fna&cb_e2o_trans=q&oh=00_AYCEGeOz0ZkG8_Mdp9u0OSW7Xr7fuF04zR1fKFJdPakG4Q&oe=666CDDDB')">
+            </div>
+        </div>
+        <div class="chi-tiet-san-pham">
+            <h1>Hoa bánh que gấu</h1>
+            <div class="gia">
+                <span class="gia-moi">570,000đ</span>
+                <span class="gia-cu">580,000đ</span>
+            </div>
+            <div class="lua-chon-size">
+                <label for="kichThuoc">Kích thước:</label>
+                <select id="kichThuoc">
+                    <option value="L">L</option>
+                    <option value="M">M</option>
+                    <option value="S">S</option>
+                </select>
+            </div>
+            <div class="lua-chon-so-luong">
+                <label>Số lượng: </label>
+                <button onclick="thayDoiSoLuong(-1)">-</button>
+                <input type="text" id="soLuong" value="1">
+                <button onclick="thayDoiSoLuong(1)">+</button>
+            </div>
+            <buton  class="dat-hang">Đặt hàng </buton>
+            <button class="them-vao-gio-hang">Thêm vào giỏ hàng </button>
+            <div class="khuyen-mai">
+                <h3>TỪ 05 - 07/06</h3>
+                <ul>
+                    <li>🌹 Tặng bạn voucher 66K cho đơn hàng từ 666K - Nhập mã 'SS66'</li>
+                    <li>🌹 Tặng bạn voucher 166K cho đơn hàng từ 1666K - Nhập mã 'SS166'</li>
+                    <li>🌹 Tặng bạn voucher 266K cho đơn hàng từ 2666K</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="./index.js"></script>
+</body>
+</html>
